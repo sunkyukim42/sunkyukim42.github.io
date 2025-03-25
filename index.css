@@ -1,37 +1,67 @@
-body{
-    border: 8px solid orange;
-    padding: 30px;
+header {
+    position: fixed;
+    top: 0;
+    left: 10px;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+    padding: 5px 0;
+    height: 53px;
 }
-
-a{
-    color: orange;
+nav {
+    position: fixed;
+    top: 90px;
+    right: 0;
+    z-index: 1100; 
 }
-
-img{
-    width: 200px;
-    display: block;
-    margin: 0 auto;
+body {
+    margin: 0;
+    padding-top: 150px;
 }
-h1{
+h2{
+    scroll-margin-top: 100px;
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
+    
+}
+.ach {
+    border-collapse: collapse;
 }
 
-h3{
-    text-align: center;
-    font-size: 30px;
+.ach th,
+.ach td {
+    border: 1px solid black; 
+    padding: 8px;
 }
-legend{
-    font-weight: bold;
+.slider {
+  position: relative;
+  width: 400px;  
+  height: 400px;
+  margin: auto;
+  overflow: hidden;
 }
-button{
-    border: 2px solid black;
-    text-decoration: underline;
-    color: white;
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
-.button1 {
-    background-color: orange;
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
 }
-.button2{
-    background-color: darkgray;
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
 }
+
+.prev { left: 10px; }
+.next { right: 10px; }
