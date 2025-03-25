@@ -1,44 +1,56 @@
-header {
-    position: fixed;
-    top: 0;
-    left: 10px;
-    width: 100%;
-    background: white;
-    z-index: 1000;
-    padding: 5px 0;
-    height: 53px;
-}
-nav {
-    position: fixed;
-    top: 90px;
-    right: 0;
-    z-index: 1100; 
-}
+/* 기본 스타일 */
 body {
-    margin: 0;
-    padding-top: 150px;
+  margin: 0;
+  padding-top: 150px;
+  background-color: white;
 }
-h2{
-    scroll-margin-top: 100px;
-    text-align: center;
-    font-size: 50px;
-    
+
+/* 헤더, 내비게이션 */
+header {
+  position: fixed;
+  top: 0;
+  left: 10px;
+  width: 100%;
+  background: white;
+  z-index: 1000;
+  padding: 5px 0;
+  height: 53px;
 }
+
+nav {
+  position: fixed;
+  top: 90px;
+  right: 0;
+  z-index: 1100;
+}
+
+/* 제목 */
+h2 {
+  scroll-margin-top: 100px;
+  text-align: center;
+  font-size: 50px;
+}
+
+/* Achievement 표 스타일 */
 .ach {
-    border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 .ach th,
 .ach td {
-    border: 1px solid black; 
-    padding: 8px;
+  border: 1px solid black;
+  padding: 8px;
 }
+
+/* 슬라이더 기본 스타일 */
 .slider {
   position: relative;
-  width: 400px;  
+  width: 100%;
+  max-width: 400px;  
   height: 400px;
   margin: auto;
   overflow: hidden;
+  background: #fff;
 }
 
 .slides {
@@ -65,3 +77,23 @@ h2{
 
 .prev { left: 10px; }
 .next { right: 10px; }
+
+/* 미디어 쿼리: 작은 화면에서 슬라이더 크기 및 글자 크기 조정 */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 200%;
+  }
+  nav table {
+    font-size: 150%;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  .slider {
+    height: 250px;
+  }
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+}
