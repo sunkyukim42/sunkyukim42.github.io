@@ -1,11 +1,10 @@
-/* 기본 스타일 */
+
 body {
   margin: 0;
   padding-top: 150px;
   background-color: white;
 }
 
-/* 헤더, 내비게이션 */
 header {
   position: fixed;
   top: 0;
@@ -24,14 +23,13 @@ nav {
   z-index: 1100;
 }
 
-/* 제목 */
+
 h2 {
   scroll-margin-top: 100px;
   text-align: center;
   font-size: 50px;
 }
 
-/* Achievement 표 스타일 */
 .ach {
   border-collapse: collapse;
 }
@@ -42,7 +40,7 @@ h2 {
   padding: 8px;
 }
 
-/* 슬라이더 기본 스타일 */
+
 .slider {
   position: relative;
   width: 100%;
@@ -78,7 +76,7 @@ h2 {
 .prev { left: 10px; }
 .next { right: 10px; }
 
-/* 미디어 쿼리: 작은 화면에서 슬라이더 크기 및 글자 크기 조정 */
+
 @media (max-width: 480px) {
   header h1 {
     font-size: 200%;

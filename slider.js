@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
       }
   
-      // 이벤트 리스너 등록 (버튼 클릭 시)
+     
       const prevBtn = slider.querySelector('.prev');
       const nextBtn = slider.querySelector('.next');
   
